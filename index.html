@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a52573add.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <div class="nav" id="home">
+            <div class="logo">
+                <img src="./ịmages/logo.png" style="width: 70px;">
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="type to search...">
+                <span class="material-icons search-icon" style="font-size: 32px;">
+                    search
+                </span>
+            </div>
+            <!--Menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#good-offers">Good Offers</a></li>
+                    <li><a href="#explore-nature">Explore Nature</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Header-->
+        <div class="header">
+            <img src="./ịmages/plane.jpg">
+            <div class="display-middle" style="width: 65%;">
+                <div class="bar">
+                    <button class="flight flex">
+                        <i class="fas fa-plane" "></i>
+                        <p>Flight</p>
+                    </button>
+                    <button class="hotel flex">
+                        <i class="fas fa-hotel" v></i>
+                        <p>Hotel</p>
+                    </button>
+                    <button class="rental flex">
+                        <i class="fas fa-car" icon ></i>
+                        <p>Rental</p>
+                    </button>
+                </div>
+                <div class="info-flight">
+                    <h3>Travel the world with us</h3>
+                    <div class="wrapper">
+                        <div class="haft" style="margin-right: 15px;">
+                            <p>From</p>
+                            <input type="text" placeholder="Departing from">
+                        </div>
+                        <div class="haft">
+                            <p>To</p>
+                            <input type="text" placeholder="Arriving at">
+                        </div>
+                    </div>
+                    <button>Seach and Fine dates</button>
+                </div>
+
+                <!--Tabs-->
+                <div class="flight"></div>
+                <div class="hotel"></div>
+                <div class="rental"></div>
+            </div>
+        </div>
+
+        <!--Page content-->
+        <div class="content">
+            <!--Good offers-->
+            <div class="good-offers" id="good-offers">
+                <h3>Good offers right now</h3>
+                <h5>Up to <strong>50%</strong> discount</h5>
+                <div class="go-place">
+                    <div class="col-1">
+                        <img src="./ịmages/danang.jfif" style="width: 527px; height: 393px;">
+                        <p>Da Nang</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="row-1">
+                            <img src="./ịmages/newyork.jpg" style="width: 250px; height: 190px;">
+                            <p>New York</p>
+                        </div>
+                        <div class="row-2">
+                            <img src="./ịmages/cinqueterre.jpg" style="width: 250px; height: 190px;">
+                            <p>Cinque Terre</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row-1">
+                            <img src="./ịmages/hanoi.jpg" style="width: 250px; height: 190px;">
+                            <p>Ha Noi</p>
+                        </div>
+                        <div class="row-2">
+                            <img src="./ịmages/pisa.jpg" style="width: 250px; height: 190px;">
+                            <p>Pisa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Explore Nature-->
+            <div class="explore-nature" id="explore-nature">
+                <h3>Explore Nature</h3>
+                <h5>Travel with us and see nature at its finest</h5>
+                <div class="child-1">
+                    <img src="./ịmages/ocean.jpg" style="width: 528px;">
+                    <div class="introduce" style="width: auto;">
+                        <h3 style="margin-top:0;">West Coast, Norway</h3>
+                        <p>Roundtrip from $79</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="child-2">
+                    <img src="./ịmages/mountains.jpg" style="width: 508px; height: 264px;">
+                    <div class="introduce" style="width: auto;">
+                        <h3 style="margin-top:0;">Mountains, Austria</h3>
+                        <p>One-way from $39</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Newsletter-->
+            <div class="newsletter" id="newsletter">
+                <h2>Get the best offers first!</h2>
+                <p>Join our newsletter</p>
+                <p style="color: #222; margin-bottom: 3px;">Email</p>
+                <input type="text" placeholder="Your Email address">
+                <button>Subscribe</button>
+            </div>
+
+            <!--Contact-->
+            <div class="contact" id="contact">
+                <h2>Contact</h2>
+                <p style="margin: 6px 0;">Let us book your next trip!</p>
+                <div class="info">
+                    <div class="add">
+                        <span class="material-icons icon">
+                            location_on
+                        </span>
+                        <p>Ha Noi, Vietnam</p>
+                    </div>
+                    <div class="phone">
+                        <span class="material-icons icon">
+                            phone
+                        </span>
+                        <p>Phone: 0376113905</p>
+                    </div>
+                    <div class="mail">
+                        <span class="material-icons icon">
+                            email
+                        </span>
+                        <p>Email: thaong2501@gmail.com</p>
+                    </div>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Message">
+                    <button>SEND MESSAGE</button>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="footer">
+                <p>Find Us On</p>
+                <div class="social-media">
+                    <i class="fab fa-facebook icon"></i>
+                    <i class="fab fa-instagram icon"></i>
+                    <i class="fab fa-twitter icon"></i>
+                    <i class="fab fa-snapchat-ghost icon"></i>
+                    <i class="fab fa-pinterest-p icon"></i>
+                    <i class="fab fa-linkedin-in icon"></i>
+                </div>
+                <div class="author">By @ThaoNg</div>
+            </div>
+            
+        </div>
+        <div class="back">
+            <a href="#home">
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+    </body>
+</html>
