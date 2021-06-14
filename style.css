@@ -91,22 +91,22 @@ body{
         transform: translate(-50%, -50%);
         
     }
-    .bar{
+    .tabs{
         display: flex;
         height: 35px;
         background-color: #000;
     }
     
-    .bar button{
+    .tabs button{
         border: none;
        background: none;
        color: #fff;
        outline: none;
     }
-    .bar button:focus{
+    .tab-item.active{
         background-color: #ee9d52;
     }
-    .bar .flex{
+    .tabs .flex{
         display: flex;
         align-items: center;
        cursor: pointer;
@@ -115,17 +115,18 @@ body{
     .flex p{
         margin-left: 8px;
     }
-    .bar .flex:hover{
+    .tabs .flex:hover{
         background-color: #aaa;
         color: #222;
     }
-    .info-flight{
+    .tab-pane{
         background-color: #fff;
         padding: 0 20px 20px 20px;
         width: 100%;
         box-sizing: border-box;
+        display: none;
     }
-    .info-flight::after{
+    .tab-pane.active{
         content: "";
         clear: both;
         display: block;
@@ -145,7 +146,7 @@ body{
         color: #555;
         font-size: 0.9rem;
     }
-    .info-flight button{
+    .tab-pane button{
         margin-top: 10px;
         border: none;
         padding: 10px; 
@@ -153,11 +154,27 @@ body{
         background-color: #666;
         color: #fff;
     }
-    .info-flight button:hover{
+    .tab-pane button:hover{
         background-color: #aaa;
         color: #222;
     }
-
+    .hotel p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .rental p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .rental .discount{
+        background-color: rgb(238, 58, 58);
+        padding: 5px 10px 5px 10px;
+    }
+    .rental input{
+        padding-left: 10px;
+        width: 100%;
+        height: 30px;
+    }
 /*Page Content*/
     /*--Good offers--*/
     .content{
@@ -165,15 +182,15 @@ body{
         max-width: 1047px;
     }
     h3{
-        font-weight: lighter;
+        /* font-weight: lighter; */
         text-transform: capitalize;
         font-size: 1.5rem;
-        color: #333;
+        color: rgb(92, 88, 88);
         padding-top: 30px;
     }
     h5{
-        font-weight: lighter;
-        color: #555;
+        /* font-weight: lighter; */
+        color: rgb(109, 104, 104);
         font-size: 1rem;
         margin: 10px 0;
     }
@@ -304,8 +321,9 @@ body{
         box-sizing: border-box;
     }
     .newsletter h2{
-        font-weight: lighter;
+        /* font-weight: lighter; */
         margin: 10px 0;
+        color: rgb(37, 37, 37);
     }
     .newsletter p{
         color: #333;

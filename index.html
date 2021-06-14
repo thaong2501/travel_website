@@ -34,39 +34,57 @@
         <div class="header">
             <img src="./ịmages/plane.jpg">
             <div class="display-middle" style="width: 65%;">
-                <div class="bar">
-                    <button class="flight flex">
-                        <i class="fas fa-plane" "></i>
+                <!-- Tabs items -->
+                <div class="tabs">
+                    <button class="tab-item active flex">
+                        <i class="fas fa-plane"></i>
                         <p>Flight</p>
                     </button>
-                    <button class="hotel flex">
+                    <button class="tab-item flex">
                         <i class="fas fa-hotel" v></i>
                         <p>Hotel</p>
                     </button>
-                    <button class="rental flex">
+                    <button class="tab-item flex">
                         <i class="fas fa-car" icon ></i>
                         <p>Rental</p>
                     </button>
-                </div>
-                <div class="info-flight">
-                    <h3>Travel the world with us</h3>
-                    <div class="wrapper">
-                        <div class="haft" style="margin-right: 15px;">
-                            <p>From</p>
-                            <input type="text" placeholder="Departing from">
-                        </div>
-                        <div class="haft">
-                            <p>To</p>
-                            <input type="text" placeholder="Arriving at">
+                </div>               
+
+                <!--Tabs content-->
+                <div class="tabs-content">
+                    <div class="tab-pane active">
+                        <div class="flight">
+                            <h3>Travel the world with us</h3>
+                            <div class="wrapper">
+                                <div class="haft" style="margin-right: 15px;">
+                                    <p>From</p>
+                                    <input type="text" placeholder="Departing from">
+                                </div>
+                                <div class="haft">
+                                    <p>To</p>
+                                    <input type="text" placeholder="Arriving at">
+                                </div>
+                            </div>
+                            <button>Seach and Fine dates</button>
                         </div>
                     </div>
-                    <button>Seach and Fine dates</button>
-                </div>
-
-                <!--Tabs-->
-                <div class="flight"></div>
-                <div class="hotel"></div>
-                <div class="rental"></div>
+                    <div class="tab-pane">
+                        <div class="hotel">
+                            <h3>Find the best hotels</h3>
+                            <p>Book a hotel with us and get the best fares and promotions.</p>
+                            <p>We know hotels - we know comfort.</p>
+                            <button class="">Search Hotels</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane">
+                        <div class="rental">
+                            <h3>Best car rental in the world!</h3>
+                            <p><span class="discount">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+                            <input class="" type="text" placeholder="Pick-up point">
+                            <button class="">Search Availability</button>
+                        </div>
+                    </div>
+                </div>              
             </div>
         </div>
 
@@ -180,12 +198,13 @@
                 </div>
                 <div class="author">By @ThaoNg</div>
             </div>
-            
         </div>
+        <!-- Scroll to top -->
         <div class="back">
             <a href="#home">
                 <i class="fas fa-angle-double-up"></i>
             </a>
         </div>
+        <script src="./main.js"></script>
     </body>
 </html>
